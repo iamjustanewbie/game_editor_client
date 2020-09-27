@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.FrameViewSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
+        xmlns:tween="egret.tween.*">
+    <w:Declarations></w:Declarations>
+    <e:Image source="header_png" top="0" left="0" height="160" right="0" />
+    <e:DataGroup id="frame" y="20" horizontalCenter="0">
+        <e:itemRendererSkinName>
+            <e:Skin>
+                <e:Label text="{data}" size="12" verticalAlign="middle" textAlign="center" width="20"
+                         textColor="0x000000" />
+            </e:Skin>
+        </e:itemRendererSkinName>
+        <e:layout>
+            <e:HorizontalLayout gap="40" />
+        </e:layout>
+    </e:DataGroup>
+    <e:Rect id="cursorBg" height="20" y="35" width="818" scaleX="1" scaleY="1" horizontalCenter="1" />
+    <e:List id="cursor" y="35" horizontalCenter="1">
+        <e:itemRendererSkinName>
+            <e:Skin states="up,down,disabled">
+                <e:Rect width="10" height="20" scaleX="1" scaleY="1" fillColor="0xFF0000" fillColor.down="0x00FF00" />
+            </e:Skin>
+        </e:itemRendererSkinName>
+        <e:layout>
+            <e:HorizontalLayout gap="50" />
+        </e:layout>
+    </e:List>
+    <e:DataGroup id="duration" y="55" horizontalCenter="30">
+        <e:itemRendererSkinName>
+            <e:Skin>
+                <e:EditableText id="lab" text="{data}" size="16" verticalAlign="middle" width="60" textAlign="center"
+                                border="true" height="25" textColor="0x00FF00" restrict="&quot;0-9&quot;" />
+            </e:Skin>
+        </e:itemRendererSkinName>
+        <e:layout>
+            <e:HorizontalLayout gap="0" />
+        </e:layout>
+    </e:DataGroup>
+    <e:CheckBox id="loop" label="循环播放" skinName="skins.CheckBoxSkin" y="116" horizontalCenter="-150" />
+    <e:Button id="btnPlay" label="播放" skinName="skins.ButtonSkin" height="50" y="102" width="120" horizontalCenter="0" />
+    <e:Group y="103" width="146" height="48" horizontalCenter="200">
+        <e:Label text="帧率：" size="20" x="0" y="5" />
+        <e:EditableText id="frameEditor" width="80" text="24" border="true" size="20" verticalAlign="middle"
+                        textAlign="center" maxChars="5" height="30" textColor="0x00FF00" restrict="&quot;0-9&quot;"
+                        x="60" y="0" />
+        <e:Label text="（最大帧率：60）" size="12" textColor="0xc4c4c4" bottom="0" horizontalCenter="0" />
+    </e:Group>
+</e:Skin>

@@ -1,0 +1,39 @@
+{
+  "engineVersion": "5.2.16",
+  "compilerVersion": "5.2.16",
+  "template": {},
+  "target": {
+    "current": "web"
+  },
+  "modules": [
+    {
+      "name": "egret"
+    },
+    {
+      "name": "assetsmanager"
+    },
+    {
+      "name": "tween"
+    },
+    {
+      "name": "eui"
+    },
+    {
+      "name": "game"
+    },
+    {
+      "name": "base",
+      "path": "./libs/base"
+    },
+    {
+      "name": "greensock",
+      "path": "./libs/greensock"
+    }
+  ],
+  "targets": {
+    "android": {
+      "appname": "mdzs",
+      "packagename": "tengding.game.mdzs"
+    }
+  }
+}
