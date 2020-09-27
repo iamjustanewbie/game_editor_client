@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.main.StartViewSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
+        width="456" height="639">
+    <e:Image source="border_png" left="0" right="0" top="0" bottom="0"  anchorOffsetY="0" anchorOffsetX="0" height="639"/>
+    <e:Image source="header_png" height="63" y="0" left="0" right="0" />
+    <e:Label text="选择编辑" y="11" bold="true" size="37" horizontalCenter="0" />
+    <e:Group horizontalCenter="0" y="85">
+        <e:Button id="btnMap" label="地图掩码" y="-40" width="240" height="80" x="0">
+            <e:skinName>
+                <e:Skin states="up,down,disabled">
+                    <e:Image width="100%" height="100%" source="button_up_png" source.down="button_down_png"
+                             scale9Grid="2,2,10,8" />
+                    <e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="30" />
+                </e:Skin>
+            </e:skinName>
+        </e:Button>
+			<e:Button id="btnScene" label="场景编辑" y="0" width="240" height="80">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="button_up_png" source.down="button_down_png" scale9Grid="2,2,10,8"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="30"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+        <e:Button id="btnAnimation" label="动画" y="0" skinName="skins.ButtonSkin" width="240" height="80" x="0">
+            <e:skinName>
+                <e:Skin states="up,down,disabled">
+                    <e:Image width="100%" height="100%" source="button_up_png" source.down="button_down_png"
+                             scale9Grid="2,2,10,8" />
+                    <e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="30" />
+                </e:Skin>
+            </e:skinName>
+        </e:Button>
+        <e:Button id="btnEft" label="技能特效" y="0" width="240" height="80">
+            <e:skinName>
+                <e:Skin states="up,down,disabled">
+                    <e:Image width="100%" height="100%" source="button_up_png" source.down="button_down_png"
+                             scale9Grid="2,2,10,8" />
+                    <e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="30" />
+                </e:Skin>
+            </e:skinName>
+        </e:Button>
+        <e:Button id="btnFont" label="飘字特效" y="10" width="240" height="80" x="10">
+            <e:skinName>
+                <e:Skin states="up,down,disabled">
+                    <e:Image width="100%" height="100%" source="button_up_png" source.down="button_down_png"
+                             scale9Grid="2,2,10,8" />
+                    <e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="30" />
+                </e:Skin>
+            </e:skinName>
+        </e:Button>
+        <e:layout>
+            <e:VerticalLayout gap="30" />
+        </e:layout>
+    </e:Group>
+</e:Skin>

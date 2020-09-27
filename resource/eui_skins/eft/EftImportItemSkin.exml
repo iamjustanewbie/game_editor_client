@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.effect.EftImportItemSkin" width="145" height="40" xmlns:e="http://ns.egret.com/eui">
+    <e:Image width="100%" height="100%" scale9Grid="1,3,8,8" source="button_up_png" />
+    <e:Label id="labelDisplay" top="8" bottom="8" left="8" right="8" size="20" fontFamily="Tahoma" text="{data}"
+             verticalAlign="middle" textAlign="center" textColor="0xFFFFFF" />
+    <e:Label id="btnDel" text="×" width="18" height="18" size="18" background="true" backgroundColor="0xFF0000"
+             verticalAlign="middle" textAlign="center" right="2" top="0" />
+</e:Skin>

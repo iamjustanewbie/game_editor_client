@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.editor.AlertViewSkin" width="420" height="300" currentState="default"
+        xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" minHeight="300"
+        states="confirm,default,cancel">
+    <e:Image source="border_png" scale9Grid="22,5,133,37" left="0" right="0" top="0" bottom="0" />
+    <e:Image source="header_png" scale9Grid="2,2,12,12" height="53" y="0" left="0" right="0" />
+    <e:Label text="提示" y="12" bold="true" x="169" />
+    <e:Label id="lab" text="" textColor="0x000000" horizontalCenter="0" width="390" textAlign="center"
+             verticalAlign="middle" top="70" bottom="90" lineSpacing="12" size="26" />
+    <e:Button id="btnConfirm" label="确定" horizontalCenter="0" bottom="20" skinName="skins.ButtonSkin"
+              includeIn="confirm,cancel" height="40" horizontalCenter.cancel="100" />
+    <e:Button id="btnCancel" label="取消" horizontalCenter="-100" bottom="20" skinName="skins.ButtonSkin"
+              includeIn="cancel" height="40" />
+</e:Skin>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.effect.EftEditorViewSkin" width="1132" height="1280" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing">
+    <e:Rect left="0" right="0" top="0" bottom="0" fillColor="0x999999" />
+    <e:Group id="group" x="206" y="0" width="720" height="1280">
+        <e:Rect height="2" fillColor="0x00ff00" width="720" touchEnabled="false" horizontalCenter="0" verticalCenter="0" />
+        <e:Rect fillColor="0x00FF00" width="2" height="1280" touchEnabled="false" horizontalCenter="0"
+                verticalCenter="0" />
+        <e:Rect id="circle" width="360" height="360" touchEnabled="false" horizontalCenter="0" verticalCenter="0"
+                fillAlpha="0" fillColor="0x00ff00" strokeColor="0x00ff00" strokeAlpha="1" strokeWeight="2"
+                ellipseWidth="360" ellipseHeight="360" />
+        <e:Group id="group_actor" x="360" y="640" />
+        <e:Group id="group_editor" x="360" y="640"></e:Group>
+        <e:Group id="group_idx" touchThrough="true" x="360" y="640" />
+    </e:Group>
+    <e:Scroller id="scroll" width="190" maxHeight="1000" left="0" scrollPolicyH="off" top="160" bottom="100">
+        <e:List id="list_eft" itemRendererSkinName="skins.ItemRendererSkin">
+            <e:ArrayCollection>
+                <e:Array>
+                    <e:Object a="null" />
+                    <e:Object a="null" />
+                    <e:Object a="null" />
+                    <e:Object a="null" />
+                    <e:Object a="null" />
+                </e:Array>
+            </e:ArrayCollection>
+        </e:List>
+    </e:Scroller>
+    <e:Group id="group_bar" right="0" top="0" bottom="0" minWidth="250">
+        <e:Image source="header_png" left="0" right="0" top="0" bottom="0" />
+        <e:CheckBox id="loopPlay" label="循环预览" skinName="skins.CheckBoxSkin" y="175" horizontalCenter="-60" />
+        <e:CheckBox id="showIdx" label="显示标识" skinName="skins.CheckBoxSkin" y="175" horizontalCenter="60" />
+        <e:Group y="5" horizontalCenter="0">
+            <e:Label id="label_id" text="ID:1009" x="56" textColor="0x000000" bold="true" size="22" y="61"
+                     strokeColor="0xffffff" />
+            <e:Label id="label_totalTime" text="总时长：0" x="66" textColor="0x000000" size="18" y="71"
+                     strokeColor="0xFFFFFF"  bold="true"/>
+            <e:Button id="btnPublish" label="发布" skinName="skins.ButtonSkin" width="160" height="50" scaleX="1"
+                      scaleY="1" x="0" y="0" />
+            <e:Button id="btnReview" label="预览" skinName="skins.ButtonSkin" width="160" height="50" scaleX="1"
+                      scaleY="1" y="112" x="0" />
+            <e:layout>
+                <e:VerticalLayout horizontalAlign="center" />
+            </e:layout>
+        </e:Group>
+        <e:Group scaleX="1" scaleY="1" y="210" horizontalCenter="0">
+            <e:Label text="圆形半径：" y="5" size="16" textColor="0x000000" textAlign="right" x="0" />
+            <e:EditableText id="editorRadius" width="70" text="360" border="true" size="18" verticalAlign="middle"
+                            textAlign="center" maxChars="5" height="26" textColor="0x000000" restrict="&quot;0-9&quot;"
+                            x="91" y="0" />
+            <e:layout>
+                <e:HorizontalLayout verticalAlign="middle"  gap="0"/>
+            </e:layout>
+        </e:Group>
+        <e:List id="list_add" itemRendererSkinName="skins.effect.EftAddItemSkin" top="250" horizontalCenter="0"
+               >
+            <e:layout>
+                <e:TileLayout verticalGap="10" orientation="columns" horizontalAlign="right" horizontalGap="10"
+                              requestedRowCount="10" />
+            </e:layout>
+        </e:List>
+    </e:Group>
+    <e:Group left="0" top="10">
+        <e:Button id="btnBack" label="返回" width="190" height="60" y="0" x="0">
+            <e:skinName>
+                <e:Skin states="up,down,disabled" xmlns:tween="egret.tween.*">
+                    <e:Image width="100%" height="100%" source="button_up_png" source.down="button_down_png"
+                             scale9Grid="2,2,10,8" />
+                    <e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="35" />
+                </e:Skin>
+            </e:skinName>
+        </e:Button>
+        <e:Button id="btnImport" label="打开特效" width="190" height="60" x="230" y="0">
+            <e:skinName>
+                <e:Skin states="up,down,disabled" xmlns:tween="egret.tween.*">
+                    <e:Image width="100%" height="100%" source="button_up_png" source.down="button_down_png"
+                             scale9Grid="2,2,10,8" />
+                    <e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="35" />
+                </e:Skin>
+            </e:skinName>
+        </e:Button>
+        <e:layout>
+            <e:VerticalLayout gap="10" />
+        </e:layout>
+    </e:Group>
+</e:Skin>

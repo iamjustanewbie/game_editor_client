@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.map.MonsterItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+    <e:Group id="title" x="-75" y="-165" touchThrough="true" width="150" height="40">
+        <e:Label id="lab_idx" text="1:" size="20" verticalAlign="middle" textAlign="center" stroke="2" width="130" y="0"
+                 touchEnabled="false" left="0" />
+        <e:Label id="lab_name" text="怪物名字七个字" y="20" size="20" verticalAlign="middle" textAlign="center" stroke="2"
+                 horizontalCenter="0" width="150" touchEnabled="false" />
+        <e:Label id="btnDel" text="×" width="20" height="20" size="20" background="true" backgroundColor="0xff0000"
+                 verticalAlign="middle" textAlign="center" y="0" x="130" />
+			<e:Button id="btnRotate" label="" x="0" y="-2" anchorOffsetX="0" width="21" anchorOffsetY="0" height="22">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="btn_jpg" source.down="btn_jpg"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+    </e:Group>
+    <e:Rect id="rect" width="50" height="50" fillColor="0x00ff00" ellipseWidth="50" ellipseHeight="50" anchorOffsetX="25"
+            anchorOffsetY="25" y="0" fillAlpha="0.5" touchEnabled="true" touchChildren="false" />
+    <e:Label id="lab_birthPt" text="1" height="30" backgroundColor="0xffff00" verticalAlign="middle"
+             textAlign="center" textColor="0x000000" background="false" x="-15" y="-15" touchEnabled="false" />
+	<e:ToggleButton id="autoCreate" label="自动创建" x="-75" y="-192" skinName="skins.ToggleSwitchSkin" selected="true"/>
+	<e:Label id="lbl_create" text="自动创建" x="-5" y="-191" anchorOffsetX="0" anchorOffsetY="0" size="20"/>
+</e:Skin>

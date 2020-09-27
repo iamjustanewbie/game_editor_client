@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.FontSkin" width="720" height="1280" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" xmlns:tween="egret.tween.*">
+	<w:Config id="1673069d73f" />
+	<w:Declarations></w:Declarations>
+	<e:Group id="group_font" verticalCenter="0" width="0" height="0" horizontalCenter="0">
+		<e:BitmapLabel id="label0" text="123" x="0" y="0" anchorOffsetX="57" anchorOffsetY="27.5" alpha="0" font="atk_fnt" />
+		<e:BitmapLabel id="label1" text="236" x="0" y="0" font="atk_fnt" anchorOffsetX="57" anchorOffsetY="27.5" alpha="0" />
+		<e:BitmapLabel id="label2" text="346" x="0" y="0" font="atk_fnt" anchorOffsetX="57" anchorOffsetY="27.5" alpha="0" />
+		<e:BitmapLabel id="label3" text="489" x="0" y="0" font="atk_fnt" anchorOffsetX="57" anchorOffsetY="27.5" alpha="0" />
+		<e:BitmapLabel id="label4" text="545" x="0" y="0" font="atk_fnt" anchorOffsetX="57" anchorOffsetY="27.5" alpha="0" />
+		<e:BitmapLabel id="label5" text="685" x="0" y="0" font="atk_fnt" anchorOffsetX="57" anchorOffsetY="27.5" alpha="0" />
+		<e:BitmapLabel id="label6" text="874" x="0" y="0" font="atk_fnt" anchorOffsetX="57" anchorOffsetY="27.5" alpha="0" />
+	</e:Group>
+	<e:Button id="btnShow" label="Show" skinName="skins.ButtonSkin" right="0" verticalCenter="0" />
+</e:Skin>
