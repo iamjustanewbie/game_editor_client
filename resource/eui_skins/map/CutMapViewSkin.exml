@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.map.CutMapViewSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
+        xmlns:tween="egret.tween.*" width="400" height="800">
+    <w:Declarations></w:Declarations>
+	<e:Image left="0" right="0" top="0" bottom="0" source="border_png" anchorOffsetX="0" anchorOffsetY="0" scale9Grid="59,16,59,15"/>
+	<e:Scroller top="5" bottom="5" left="5" right="5">
+		<e:List id="list" itemRendererSkinName="skins.map.CutMapItemSkin">
+			<e:layout>
+				<e:TileLayout/>
+			</e:layout>
+		</e:List>
+	</e:Scroller>
+</e:Skin>

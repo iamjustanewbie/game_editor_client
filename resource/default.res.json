@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,bg_jpg,egret_icon_png,description_json",
+			"keys": "checkbox_select_disabled_png,checkbox_select_down_png,checkbox_select_up_png,checkbox_unselect_png,selected_png,border_png,header_png,radiobutton_select_disabled_png,radiobutton_select_down_png,radiobutton_select_up_png,radiobutton_unselect_png,roundthumb_png,thumb_png,track_png,tracklight_png,handle_png,off_png,on_png,button_down_png,button_up_png,thumb_pb_png,track_pb_png,track_sb_png,qizi_png,btn_jpg",
 			"name": "preload"
 		}
 	],
@@ -122,19 +122,34 @@
 			"name": "track_sb_png"
 		},
 		{
-			"url": "assets/bg.jpg",
-			"type": "image",
-			"name": "bg_jpg"
+			"url": "assets/fnt/atk.fnt",
+			"type": "font",
+			"name": "atk_fnt"
 		},
 		{
-			"url": "assets/egret_icon.png",
+			"url": "assets/fnt/atk.png",
 			"type": "image",
-			"name": "egret_icon_png"
+			"name": "atk_png"
 		},
 		{
-			"name": "description_json",
-			"type": "json",
-			"url": "config/description.json"
+			"url": "assets/fnt/flyText.fnt",
+			"type": "font",
+			"name": "flyText_fnt"
+		},
+		{
+			"url": "assets/fnt/flyText.png",
+			"type": "image",
+			"name": "flyText_png"
+		},
+		{
+			"name": "qizi_png",
+			"type": "image",
+			"url": "assets/image/qizi.png"
+		},
+		{
+			"name": "btn_jpg",
+			"type": "image",
+			"url": "assets/image/btn.jpg"
 		}
 	]
 }

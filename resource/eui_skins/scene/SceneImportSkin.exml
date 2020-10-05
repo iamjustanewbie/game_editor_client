@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin width="460" height="161" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" class="skins.scene.SceneImportSkin">
+	<e:Image top="0" left="0" right="0" bottom="0" source="border_png"/>
+	<e:Button id="btn_close" label="×" x="422" y="0" anchorOffsetX="0" width="38" anchorOffsetY="0" height="31">
+		<e:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="button_up_png" source.down="button_down_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Label text="场景id:" x="109" y="50.5" textColor="0x000000"/>
+	<e:EditableText id="txt_sceneid" width="100" height="31" text="" x="230" y="49.5" textColor="0xffffff" anchorOffsetY="0" backgroundColor="0x53b3f0" background="true"/>
+	<e:Button id="btn_new" label="新建" y="101" enabled="true" width="100" height="40" horizontalCenter="0">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="button_up_png" source.down="button_down_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+</e:Skin>

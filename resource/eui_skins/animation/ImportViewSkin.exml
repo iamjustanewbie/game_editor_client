@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.ImportViewSkin" height="520" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
+        width="500">
+    <e:Image source="border_png" left="0" right="0" top="0" bottom="0" />
+    <e:List id="list_dir" itemRendererSkinName="skins.ItemRendererSkin" y="110" horizontalCenter="0" width="230">
+        <e:ArrayCollection>
+            <e:Array>
+                <e:Object a="部位" />
+                <e:Object a="仙侠主角-第一套-女" />
+            </e:Array>
+        </e:ArrayCollection>
+        <e:layout>
+            <e:VerticalLayout gap="15" horizontalAlign="justify" verticalAlign="justify" />
+        </e:layout>
+    </e:List>
+    <e:Button id="btnImport" label="导入" horizontalCenter="0" bottom="50" width="180" height="50">
+        <e:skinName>
+            <e:Skin states="up,down,disabled">
+                <e:Image width="100%" height="100%" source="button_up_png" source.down="button_down_png"
+                         scale9Grid="2,2,10,8" />
+                <e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="30" bold="true" />
+            </e:Skin>
+        </e:skinName>
+    </e:Button>
+    <e:Button id="btnClose" label="×" width="50" height="50" right="0" top="0">
+        <e:skinName>
+            <e:Skin states="up,down,disabled">
+                <e:Image width="100%" height="100%" source="button_up_png" source.down="button_down_png"
+                         scale9Grid="2,2,10,8" />
+                <e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" size="30" bold="true" />
+            </e:Skin>
+        </e:skinName>
+    </e:Button>
+    <e:Label text="动画ID：" x="85" y="298" textColor="0x000000" bold="true" />
+    <e:EditableText id="input" width="210" height="45" text="female_10001" x="205" y="290" border="true"
+                    restrict="A-Z 0-9 a-z \\- _" verticalAlign="middle" background="true" backgroundColor="0x53b3f0"
+                    textColor="0xffffff" textAlign="center" size="25" />
+</e:Skin>

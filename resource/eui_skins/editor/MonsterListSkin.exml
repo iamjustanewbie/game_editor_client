@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.map.MonsterListSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
+        width="200" maxHeight="1000">
+	<e:EditableText id="editor_text" height="45" text="" y="1" anchorOffsetY="0" left="0" right="0" size="24" prompt="输入关键字" background="true" backgroundColor="0x43caf9" textColor="0xffffff"/>
+    <e:Scroller top="48" bottom="0" left="0" right="0">
+        <e:List id="list" itemRendererSkinName="skins.ItemRendererSkin">
+            <e:ArrayCollection>
+                <e:Array>
+                    <e:Object a="null" />
+                    <e:Object a="null" />
+                    <e:Object a="null" />
+                    <e:Object a="null" />
+                    <e:Object a="null" />
+                </e:Array>
+            </e:ArrayCollection>
+            <e:layout>
+                <e:VerticalLayout horizontalAlign="contentJustify" />
+            </e:layout>
+        </e:List>
+    </e:Scroller>
+</e:Skin>

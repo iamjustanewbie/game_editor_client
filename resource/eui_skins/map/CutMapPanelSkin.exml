@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.map.CutMapPanelSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
+        xmlns:tween="egret.tween.*" width="400" height="258">
+    <w:Declarations></w:Declarations>
+	<e:Image left="0" right="0" top="0" bottom="0" source="border_png"/>
+	<e:Button id="btn_close" label="×" x="362" y="0" anchorOffsetX="0" width="38" anchorOffsetY="0" height="31">
+		<e:skinName>
+		<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="button_up_png" source.down="button_down_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+		</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Label text="切地图" x="150.33" y="1" textColor="0x000000"/>
+	<e:Group width="344" height="28" y="86.17" left="25">
+		<e:Label text="切割宽度：" x="13.670000000000002" y="23.999999999999993" textColor="0x000000" size="20" scaleX="1" scaleY="1"/>
+		<e:EditableText id="txt_width" width="51.33" height="20" text="256" x="168" y="15" anchorOffsetX="0" backgroundColor="0x53B3F0" background="true" size="20"/>
+		<e:Label x="141" y="24" textColor="0x000000" size="20" scaleX="1" scaleY="1" text="切割高度："/>
+		<e:EditableText id="txt_height" width="50" height="20" text="256" x="178" y="25" anchorOffsetX="0" backgroundColor="0x53B3F0" background="true" size="20"/>
+		<e:layout>
+		<e:HorizontalLayout gap="8" horizontalAlign="left" verticalAlign="middle"/>
+		</e:layout>
+	</e:Group>
+	<e:Group width="344" height="28" y="141" left="25">
+		<e:Label text="小地图缩小倍率：" x="13.670000000000002" y="23.999999999999993" textColor="0x000000" size="20" scaleX="1" scaleY="1"/>
+		<e:EditableText id="txt_rate" text="70" x="277" y="17" size="20" backgroundColor="0x53B3F0" background="true" anchorOffsetX="0" width="56.33" height="20"/>
+		<e:layout>
+		<e:HorizontalLayout horizontalAlign="left" verticalAlign="middle" gap="8"/>
+		</e:layout>
+	</e:Group>
+	<e:Group width="344" height="28" y="44" left="25" x="35">
+		<e:Label text="地图名字:" x="13.670000000000002" y="23.999999999999993" textColor="0x000000" size="20" scaleX="1" scaleY="1"/>
+		<e:Label id="txt_name" x="277" y="17" size="20" backgroundColor="0x53B3F0" background="true" anchorOffsetX="0" text="1" height="20"/>
+		<e:layout>
+		<e:HorizontalLayout horizontalAlign="left" verticalAlign="middle" gap="8"/>
+		</e:layout>
+	</e:Group>
+	<e:Group width="344" height="28" x="22.68" y="203">
+		<e:Button id="btn_confirm" label="确定" x="359.32" y="-183" anchorOffsetX="0" width="84" anchorOffsetY="0" height="34" scaleX="1" scaleY="1" skinName="skins.ButtonSkin"/>
+		<e:layout>
+		<e:HorizontalLayout horizontalAlign="center" verticalAlign="middle" gap="16"/>
+		</e:layout>
+	</e:Group>
+</e:Skin>

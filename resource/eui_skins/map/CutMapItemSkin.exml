@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.map.CutMapItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing"
+        xmlns:tween="egret.tween.*">
+    <w:Declarations></w:Declarations>
+	<e:Image id="img_map" anchorOffsetX="0" anchorOffsetY="0" top="0" source="{data.src}" horizontalCenter="0" height="204" width="369" fillMode="scale"/>
+	<e:Label id="lbl_name" text="{data.name}" y="207" size="20" horizontalCenter="-1" textColor="0xCA0707"/>
+</e:Skin>

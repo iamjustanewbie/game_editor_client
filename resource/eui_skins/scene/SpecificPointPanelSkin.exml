@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin width="400" height="150" currentState="new" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" class="skins.scene.SpecificPointPanelSkinSkin" states="new,modify" >
+	<e:Image left="0" right="0" top="0" bottom="0" source="border_png"/>
+	<e:Button id="btn_close" label="×" x="362" y="0" anchorOffsetX="0" width="38" anchorOffsetY="0" height="31">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" source="button_up_png" source.down="button_down_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Label text="设置特定点" y="1" textColor="0x000000" horizontalCenter="0"/>
+
+	<e:Group width="344" height="28" y="38.67" anchorOffsetX="0" anchorOffsetY="0" left="25">
+		<e:Label text="地图id:" x="13.670000000000002" y="23.999999999999993" textColor="0x000000" size="20" scaleX="1" scaleY="1"/>
+		<e:Label id="txt_mapid" text="Label" x="267" y="7" size="20" backgroundColor="0x53b3f0" background="true" anchorOffsetX="0" width="56.33"/>
+		<e:Label text="x:" x="141" y="24" textColor="0x000000" size="20" scaleX="1" scaleY="1"/>
+		<e:Label id="txt_x" text="Label" x="277" y="17" size="20" backgroundColor="0x53B3F0" background="true" anchorOffsetX="0" width="56.33"/>
+		<e:Label text="y:" x="246.65" y="24" textColor="0x000000" size="20" scaleX="1" scaleY="1"/>
+		<e:Label id="txt_y" text="Label" x="287" y="27" size="20" backgroundColor="0x53B3F0" background="true" anchorOffsetX="0" width="56.33"/>
+		<e:layout>
+			<e:HorizontalLayout gap="8" horizontalAlign="left" verticalAlign="middle"/>
+		</e:layout>
+	</e:Group>
+	<e:Group width="208" height="28" y="86.17" horizontalCenter="12" anchorOffsetX="0">
+		<e:Label text="id:" x="13.670000000000002" y="23.999999999999993" textColor="0x000000" size="20" scaleX="1" scaleY="1"/>
+		<e:EditableText id="txt_id" width="51.33" height="20" text="" x="187.16" y="15" anchorOffsetX="0" backgroundColor="0x53b3f0" background="true" size="20"/>
+		<e:Button id="btn_new" label="添加" x="108" y="-183" anchorOffsetX="0" width="84" anchorOffsetY="0" height="34" scaleX="1" scaleY="1" label.modify="修改" skinName="skins.ButtonSkin"/>
+
+
+
+
+		<e:layout>
+		<e:HorizontalLayout gap="8" horizontalAlign="left" verticalAlign="middle"/>
+		</e:layout>
+	</e:Group>
+
+
+</e:Skin>

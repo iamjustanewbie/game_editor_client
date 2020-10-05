@@ -20,6 +20,15 @@
     },
     {
       "name": "promise"
+    },
+    {
+      "name": "base",
+      "path":"./libs/base"
     }
-  ]
+  ],
+  "eui": {
+    "exmlRoot": [
+      "resource/eui_skins"
+    ]
+  }
 }

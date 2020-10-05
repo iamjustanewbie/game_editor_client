@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.map.SpecificPointSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="32" height="32">
+    <e:Group id="title" x="-59" y="-30" touchThrough="true" width="150" height="40">
+        <e:Label id="lab_idx" text="1:" size="20" verticalAlign="middle" textAlign="center" stroke="2" width="130" y="0"
+                 touchEnabled="false" left="0" />
+        <e:Label id="btnDel" text="×" width="20" height="20" size="20" background="true" backgroundColor="0xff0000"
+                 verticalAlign="middle" textAlign="center" y="0" x="127" />
+    </e:Group>
+	<e:Image source="qizi_png" scaleX="2.5" scaleY="2.5" width="21.333333333333332" x="-10.67" height="21.333333333333332" y="-10"/>
+</e:Skin>

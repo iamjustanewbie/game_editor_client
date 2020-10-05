@@ -32,7 +32,7 @@ const config: ResourceManagerConfig = {
                     // new WebpackDevServerPlugin({ //新的 Webpack 编译器
                     //     libraryType: "debug",
                     //     defines: { DEBUG: true, RELEASE: false },
-                    //     typescript: { mode: 'legacy' }
+                    //     typescript: { mode: 'modern' }
                     // }),
                 ]
             }

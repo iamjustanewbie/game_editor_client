@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="skins.effect.EftAddItemSkin" width="40" height="40" xmlns:e="http://ns.egret.com/eui"
+        xmlns:w="http://ns.egret.com/wing" states="up,down,upAndSelected">
+        <e:Group id="group" left="0" right="0" top="0" bottom="0">
+                <e:Rect fillColor="0x00ff00" fillColor.down="0x000000" fillColor.upAndSelected="0x000000"
+                         left="0" right="0" top="0" bottom="0"/>
+                <e:Label id="labelDisplay" size="16" fontFamily="Tahoma" verticalAlign="middle" textAlign="center"
+                         text="99" textColor="0x000000" textColor.down="0x00ff00" textColor.upAndSelected="0x00ff00"
+                         width="100%" height="100%" y="0" x="0" />
+        </e:Group>
+        <e:Label id="btnDel" text="×" width="18" height="18" size="18" background="true" backgroundColor="0xFF0000"
+                 verticalAlign="middle" textAlign="center" right="-5" top="-5" />
+</e:Skin>
