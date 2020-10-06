@@ -41,8 +41,11 @@ var tool;
             ListSwitch: "11",
             NPCList: "12",
             SceneHelp: "13",
+<<<<<<< HEAD
             CutMap: "14",
             CutMapPanel: "15",
+=======
+>>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
         };
         mod.AnimationViewType = {
             Animation: "01",
@@ -55,9 +58,17 @@ var tool;
             busy: 1,
             not_exists: 2,
             not_init: 3,
+<<<<<<< HEAD
             id_exists: 4,
             input_error: 5 //输入有误
+=======
+            id_exists: 4 //id已存在
+>>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
         };
         mod.ON_KEY_UPDATE = "on_key_update";
     })(mod = tool.mod || (tool.mod = {}));
 })(tool || (tool = {}));
+<<<<<<< HEAD
+=======
+//# sourceMappingURL=EditorDef.js.map
+>>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884

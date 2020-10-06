@@ -201,3 +201,7 @@ var tool;
         __reflect(MergedBmp.prototype, "tool.comp.MergedBmp", ["base.pool.PoolObject", "base.pool.DisposeObject"]);
     })(comp = tool.comp || (tool.comp = {}));
 })(tool || (tool = {}));
+<<<<<<< HEAD
+=======
+//# sourceMappingURL=MergedBmp.js.map
+>>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884

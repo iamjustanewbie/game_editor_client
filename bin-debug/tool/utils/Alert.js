@@ -32,3 +32,7 @@ var tool;
         __reflect(Alert.prototype, "tool.utils.Alert");
     })(utils = tool.utils || (tool.utils = {}));
 })(tool || (tool = {}));
+<<<<<<< HEAD
+=======
+//# sourceMappingURL=Alert.js.map
+>>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884

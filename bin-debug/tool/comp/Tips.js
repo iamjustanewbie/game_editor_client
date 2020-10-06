@@ -86,3 +86,7 @@ var game;
         __reflect(Tips.prototype, "game.comp.Tips");
     })(comp = game.comp || (game.comp = {}));
 })(game || (game = {}));
+<<<<<<< HEAD
+=======
+//# sourceMappingURL=Tips.js.map
+>>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884

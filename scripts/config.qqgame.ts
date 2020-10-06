@@ -6,8 +6,11 @@ import { UglifyPlugin, CompilePlugin, ManifestPlugin, ExmlPlugin, EmitResConfigF
 import { QQgamePlugin } from './qqgame/qqgame';
 import { CustomPlugin } from './myplugin';
 import * as defaultConfig from './config';
+<<<<<<< HEAD
 import { EuiCompilerPlugin } from './plugins/eui-compiler-plugin';
 import { WebpackBundlePlugin } from './plugins/webpack-plugin';
+=======
+>>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
 //是否使用QQ小游戏引擎插件
 const useQQPlugin: boolean = false;
 let pluginList: string[] = []
@@ -24,7 +27,10 @@ const config: ResourceManagerConfig = {
                     new CleanPlugin({ matchers: ["js", "resource"] }),
                     new CompilePlugin({ libraryType: "debug", defines: { DEBUG: true, RELEASE: false } }),
                     new ExmlPlugin('commonjs'), // 非 EUI 项目关闭此设置
+<<<<<<< HEAD
                     // new EuiCompilerPlugin(),//新的 eui 编译器
+=======
+>>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
                     new QQgamePlugin(useQQPlugin, pluginList),
                     new ManifestPlugin({ output: 'manifest.js', qqPlugin: { use: useQQPlugin, pluginList: pluginList } })
                 ]
@@ -36,9 +42,13 @@ const config: ResourceManagerConfig = {
                 commands: [
                     new CleanPlugin({ matchers: ["js", "resource"] }),
                     new CompilePlugin({ libraryType: "release", defines: { DEBUG: false, RELEASE: true } }),
+<<<<<<< HEAD
                     // new WebpackBundlePlugin({ libraryType: "debug", defines: { DEBUG: false, RELEASE: true } }),//新的 Webpack 编译器
                     new ExmlPlugin('commonjs'), // 非 EUI 项目关闭此设置
                     // new EuiCompilerPlugin(),//新的 eui 编译器
+=======
+                    new ExmlPlugin('commonjs'), // 非 EUI 项目关闭此设置
+>>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
                     new QQgamePlugin(useQQPlugin, pluginList),
                     new UglifyPlugin([
                         // 使用 EUI 项目，要压缩皮肤文件，可以开启这个压缩配置

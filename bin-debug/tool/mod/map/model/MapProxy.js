@@ -28,7 +28,10 @@ var tool;
                     this.onMsg(MsgId.setMapInfo, this.onMapInfoUpdate, this);
                     this.onMsg(MsgId.getMonsterList, this.onGetMonsterList, this);
                     this.onMsg(MsgId.getTeleportList, this.onGetTeleportList, this);
+<<<<<<< HEAD
                     this.onMsg(MsgId.cutMapList, this.onGetCutMapList, this);
+=======
+>>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
                 };
                 MapProxy.prototype.getData = function () {
                     return this._model;
@@ -73,6 +76,7 @@ var tool;
                 MapProxy.prototype.getMapList = function () {
                     this.sendMsg(MsgId.getMapList);
                 };
+<<<<<<< HEAD
                 MapProxy.prototype.getCutMapList = function () {
                     this.sendMsg(MsgId.cutMapList);
                 };
@@ -81,6 +85,8 @@ var tool;
                         name: name, width: width, height: height, rate: rate
                     });
                 };
+=======
+>>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
                 MapProxy.prototype.getMonsterList = function (mapId) {
                     this.sendMsg(MsgId.getMonsterList, { mapId: mapId });
                 };
@@ -123,10 +129,13 @@ var tool;
                     // }
                     // this.sendMsg(MsgId.publishMonster, { mapId: mapId, monster: monster });
                 };
+<<<<<<< HEAD
                 MapProxy.prototype.onGetCutMapList = function (n) {
                     this._model.cutMapList = n.body;
                     this.sendNt(map.CUT_MAP_LIST);
                 };
+=======
+>>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
                 return MapProxy;
             }(EditorPB));
             map.MapProxy = MapProxy;
@@ -134,3 +143,7 @@ var tool;
         })(map = mod.map || (mod.map = {}));
     })(mod = tool.mod || (tool.mod = {}));
 })(tool || (tool = {}));
+<<<<<<< HEAD
+=======
+//# sourceMappingURL=MapProxy.js.map
+>>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884

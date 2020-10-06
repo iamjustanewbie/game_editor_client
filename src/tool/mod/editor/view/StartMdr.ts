@@ -49,17 +49,23 @@ module tool.mod.editor {
             ViewMgr.getIns().showView(ModName.Map, MapViewType.Edit);
         }
 
+<<<<<<< HEAD
         private showCutMap(){
             ViewMgr.getIns().showView(ModName.Map, MapViewType.CutMap);
         }
 
+=======
+>>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
         protected addListeners(): void {
             this._view.btnMap.addEventListener(egret.TouchEvent.TOUCH_TAP, this.showMapMask, this);
             this._view.btnAnimation.addEventListener(egret.TouchEvent.TOUCH_TAP, this.showAnimation, this);
             this._view.btnEft.addEventListener(egret.TouchEvent.TOUCH_TAP, this.showEftEditor, this);
             this._view.btnFont.addEventListener(egret.TouchEvent.TOUCH_TAP, this.showFont, this);
             this._view.btnScene.addEventListener(egret.TouchEvent.TOUCH_TAP, this.showScene, this);
+<<<<<<< HEAD
             this._view.btnCutMap.addEventListener(egret.TouchEvent.TOUCH_TAP, this.showCutMap, this);
+=======
+>>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
         }
 
         protected removeListeners(): void {
@@ -68,7 +74,10 @@ module tool.mod.editor {
             this._view.btnEft.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.showEftEditor, this);
             this._view.btnFont.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.showFont, this);
             this._view.btnScene.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.showScene, this);
+<<<<<<< HEAD
             this._view.btnCutMap.removeEventListener(egret.TouchEvent.TOUCH_TAP, this.showCutMap, this);
+=======
+>>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
         }
 
     }

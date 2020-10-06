@@ -35,3 +35,7 @@ var tool;
         })(animation = ui.animation || (ui.animation = {}));
     })(ui = tool.ui || (tool.ui = {}));
 })(tool || (tool = {}));
+<<<<<<< HEAD
+=======
+//# sourceMappingURL=AnimationView.js.map
+>>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884

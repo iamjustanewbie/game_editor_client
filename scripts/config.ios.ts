@@ -2,14 +2,22 @@
 ///<reference path="api.d.ts"/>
 
 import * as path from 'path';
+<<<<<<< HEAD
 import { UglifyPlugin, CompilePlugin, ManifestPlugin, ExmlPlugin, EmitResConfigFilePlugin, TextureMergerPlugin, CleanPlugin } from 'built-in';
 import * as defaultConfig from './config';
 import { EuiCompilerPlugin } from './plugins/eui-compiler-plugin';
 import { WebpackBundlePlugin } from './plugins/webpack-plugin';
+=======
+import { UglifyPlugin, CompilePlugin, ManifestPlugin, ExmlPlugin, EmitResConfigFilePlugin, TextureMergerPlugin } from 'built-in';
+import { BricksPlugin } from './bricks/bricks';
+import { CustomPlugin } from './myplugin';
+import * as defaultConfig from './config';
+>>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
 
 const config: ResourceManagerConfig = {
 
     buildConfig: (params) => {
+<<<<<<< HEAD
         const { target, command, projectName, version } = params;
         const outputDir = `../${projectName}_ios/assets/game`;
         if (command == 'build') {
@@ -44,6 +52,23 @@ const config: ResourceManagerConfig = {
         }
         else {
             throw `unknown command : ${params.command}`;
+=======
+
+        const { target, command, projectName, version } = params;
+        const outputDir = `../${projectName}_ios/assets/game`;
+        return {
+            outputDir,
+            commands: [
+                new CompilePlugin({ libraryType: "debug", defines: { DEBUG: false, RELEASE: true } }),
+                new ExmlPlugin('commonjs'), // 非 EUI 项目关闭此设置
+                new CompilePlugin({ libraryType: "release", defines: { DEBUG: false, RELEASE: true } }),
+                new UglifyPlugin([{
+                    sources: ["main.js"],
+                    target: "main.min.js"
+                }]),
+                new ManifestPlugin({ output: 'manifest.json' })
+            ]
+>>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
         }
     },
 

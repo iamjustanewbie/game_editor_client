@@ -1,5 +1,6 @@
 import * as fs from 'fs';
 import * as path from 'path';
+<<<<<<< HEAD
 const crypto = require('crypto');
 export class WxgamePlugin implements plugins.Command {
     private useWxPlugin:boolean = false;
@@ -13,6 +14,13 @@ export class WxgamePlugin implements plugins.Command {
     }
     async onFile(file: plugins.File) {
         
+=======
+export class WxgamePlugin implements plugins.Command {
+
+    constructor() {
+    }
+    async onFile(file: plugins.File) {
+>>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
         if (file.extname == '.js') {
             const filename = file.origin;
             if (filename == "libs/modules/promise/promise.js" || filename == 'libs/modules/promise/promise.min.js') {
@@ -22,7 +30,10 @@ export class WxgamePlugin implements plugins.Command {
                 let content = file.contents.toString();
                 content += `;window.egret = egret;`;
                 content = content.replace(/definition = __global/, "definition = window");
+<<<<<<< HEAD
                 this.md5Obj[path.basename(filename)] = this.md5(content)
+=======
+>>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
                 file.contents = new Buffer(content);
             }
             else {
@@ -43,15 +54,21 @@ export class WxgamePlugin implements plugins.Command {
                 }
                 content = "var egret = window.egret;" + content;
                 if (filename == 'main.js') {
+<<<<<<< HEAD
                     content += "\n;window.Main = Main;"
                 }
                 this.md5Obj[path.basename(filename)] = this.md5(content)
+=======
+                    content += ";window.Main = Main;"
+                }
+>>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
                 file.contents = new Buffer(content);
             }
         }
         return file;
     }
     async onFinish(pluginContext: plugins.CommandContext) {
+<<<<<<< HEAD
         let { projectRoot, outputDir, buildConfig } = pluginContext
         //同步 index.html 配置到 game.js
         const gameJSPath = path.join(outputDir, "game.js");
@@ -61,6 +78,12 @@ export class WxgamePlugin implements plugins.Command {
         }
         let gameJSContent = fs.readFileSync(gameJSPath, { encoding: "utf8" });
         const projectConfig = buildConfig.projectConfig;
+=======
+        //同步 index.html 配置到 tool.js
+        const gameJSPath = path.join(pluginContext.outputDir, "tool.js");
+        let gameJSContent = fs.readFileSync(gameJSPath, { encoding: "utf8" });
+        const projectConfig = pluginContext.buildConfig.projectConfig;
+>>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
         const optionStr =
             `entryClassName: ${projectConfig.entryClassName},\n\t\t` +
             `orientation: ${projectConfig.orientation},\n\t\t` +
@@ -85,6 +108,7 @@ export class WxgamePlugin implements plugins.Command {
         else {
             orientation = "portrait";
         }
+<<<<<<< HEAD
         const gameJSONPath = path.join(outputDir, "game.json");
         let gameJSONContent = this.readData(gameJSONPath)
         gameJSONContent.deviceOrientation = orientation;
@@ -147,3 +171,11 @@ export class WxgamePlugin implements plugins.Command {
         fs.writeFileSync(filePath, JSON.stringify(data, null, "\t"));
     }
 }
+=======
+        const gameJSONPath = path.join(pluginContext.outputDir, "tool.json");
+        let gameJSONContent = JSON.parse(fs.readFileSync(gameJSONPath, { encoding: "utf8" }));
+        gameJSONContent.deviceOrientation = orientation;
+        fs.writeFileSync(gameJSONPath, JSON.stringify(gameJSONContent, null, "\t"));
+    }
+}
+>>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884

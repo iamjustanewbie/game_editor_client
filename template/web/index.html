@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <!DOCTYPE HTML>
+=======
+﻿<!DOCTYPE HTML>
+>>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
 <html>
 
 <head>
@@ -13,7 +17,11 @@
     <style>
         html, body {
             -ms-touch-action: none;
+<<<<<<< HEAD
             background: #888888;
+=======
+            background: {{=it.background}};
+>>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
             padding: 0;
             border: 0;
             margin: 0;
@@ -25,11 +33,19 @@
 <body>
     <div style="margin: auto;width: 100%;height: 100%;" class="egret-player"
          data-entry-class="Main"
+<<<<<<< HEAD
          data-orientation="auto"
          data-scale-mode="showAll"
          data-frame-rate="30"
          data-content-width="640"
          data-content-height="1136"
+=======
+         data-orientation="{{=it.orientationMode}}"
+         data-scale-mode="{{=it.scaleMode}}"
+         data-frame-rate="{{=it.frameRate}}"
+         data-content-width="{{=it.contentWidth}}"
+         data-content-height="{{=it.contentHeight}}"
+>>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
          data-show-paint-rect="false"
          data-multi-fingered="2"
          data-show-fps="false" data-show-log="false"

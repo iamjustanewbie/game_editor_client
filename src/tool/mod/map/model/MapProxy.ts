@@ -86,7 +86,6 @@ module tool.mod.map {
         }
 
         private onGetMonsterList(n: GameNT) {
-
             this.sendNt(ON_GET_MONSTERS);
         }
 

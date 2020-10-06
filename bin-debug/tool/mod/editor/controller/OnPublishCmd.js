@@ -41,9 +41,12 @@ var tool;
                         case mod.PublishCode.not_init:
                             txt = "没有编辑过！";
                             break;
+<<<<<<< HEAD
                         case mod.PublishCode.input_error:
                             txt = "输入有误";
                             break;
+=======
+>>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
                     }
                     if (txt.trim() != "") {
                         Alert.confirm(txt);
@@ -56,3 +59,7 @@ var tool;
         })(editor = mod.editor || (mod.editor = {}));
     })(mod = tool.mod || (tool.mod = {}));
 })(tool || (tool = {}));
+<<<<<<< HEAD
+=======
+//# sourceMappingURL=OnPublishCmd.js.map
+>>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884

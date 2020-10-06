@@ -26,7 +26,10 @@ var tool;
                     this.regCmd("msg_" + MsgId.publishMap, OnPublishCmd);
                     this.regCmd("msg_" + MsgId.publishMonster, OnPublishCmd);
                     this.regCmd("msg_" + MsgId.publishScene, OnPublishCmd);
+<<<<<<< HEAD
                     this.regCmd("msg_" + MsgId.cutMap, OnPublishCmd);
+=======
+>>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
                 };
                 MapMod.prototype.initModel = function () {
                     this.regProxy(mod.ProxyType.Map, map.MapProxy);
@@ -46,8 +49,11 @@ var tool;
                     this.regMdr(mod.MapViewType.SpecificPointPanel, map.SpecificPointPanelMdr);
                     this.regMdr(mod.MapViewType.ListSwitch, map.ListSwitchMdr);
                     this.regMdr(mod.MapViewType.SceneHelp, map.SceneHelp);
+<<<<<<< HEAD
                     this.regMdr(mod.MapViewType.CutMap, map.CutMapMdr);
                     this.regMdr(mod.MapViewType.CutMapPanel, map.CutMapPanelMdr);
+=======
+>>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
                 };
                 return MapMod;
             }(ModBase));
@@ -56,3 +62,7 @@ var tool;
         })(map = mod.map || (mod.map = {}));
     })(mod = tool.mod || (tool.mod = {}));
 })(tool || (tool = {}));
+<<<<<<< HEAD
+=======
+//# sourceMappingURL=MapMod.js.map
+>>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884

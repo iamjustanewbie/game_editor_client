@@ -31,7 +31,11 @@ egret_native.egretStart = function () {
         //以下为自动修改，请勿修改
         //The following is automatically modified, please do not modify
         //----auto option start----
+<<<<<<< HEAD
 		entryClassName: "tool.Main",
+=======
+		entryClassName: "tool.Editor",
+>>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
 		frameRate: 30,
 		scaleMode: "noScale",
 		contentWidth: 720,

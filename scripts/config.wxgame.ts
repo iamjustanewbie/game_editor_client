@@ -6,10 +6,14 @@ import { UglifyPlugin, CompilePlugin, ManifestPlugin, ExmlPlugin, EmitResConfigF
 import { WxgamePlugin } from './wxgame/wxgame';
 import { CustomPlugin } from './myplugin';
 import * as defaultConfig from './config';
+<<<<<<< HEAD
 import { EuiCompilerPlugin } from './plugins/eui-compiler-plugin';
 import { WebpackBundlePlugin } from './plugins/webpack-plugin';
 //是否使用微信分离插件
 const useWxPlugin: boolean = false;
+=======
+
+>>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
 const config: ResourceManagerConfig = {
 
     buildConfig: (params) => {
@@ -20,11 +24,18 @@ const config: ResourceManagerConfig = {
             return {
                 outputDir,
                 commands: [
+<<<<<<< HEAD
                     new CleanPlugin({ matchers: ["js", "resource", "egret-library"] }),
                     new CompilePlugin({ libraryType: "debug", defines: { DEBUG: true, RELEASE: false } }),
                     new ExmlPlugin('commonjs'), // 非 EUI 项目关闭此设置
                     // new EuiCompilerPlugin(),//新的 eui 编译器
                     new WxgamePlugin(useWxPlugin),
+=======
+                    new CleanPlugin({ matchers: ["js", "resource"] }),
+                    new CompilePlugin({ libraryType: "debug", defines: { DEBUG: true, RELEASE: false } }),
+                    new ExmlPlugin('commonjs'), // 非 EUI 项目关闭此设置
+                    new WxgamePlugin(),
+>>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
                     new ManifestPlugin({ output: 'manifest.js' })
                 ]
             }
@@ -33,6 +44,7 @@ const config: ResourceManagerConfig = {
             return {
                 outputDir,
                 commands: [
+<<<<<<< HEAD
                     new CleanPlugin({ matchers: ["js", "resource", "egret-library"] }),
                     new CompilePlugin({ libraryType: "release", defines: { DEBUG: false, RELEASE: true } }),
                     // new WebpackBundlePlugin({ libraryType: "debug", defines: { DEBUG: false, RELEASE: true } }),//新的 Webpack 编译器
@@ -51,6 +63,18 @@ const config: ResourceManagerConfig = {
                         }
                     ]),
                     new ManifestPlugin({ output: 'manifest.js', useWxPlugin: useWxPlugin })
+=======
+                    new CleanPlugin({ matchers: ["js", "resource"] }),
+                    new CompilePlugin({ libraryType: "release", defines: { DEBUG: false, RELEASE: true } }),
+                    new ExmlPlugin('commonjs'), // 非 EUI 项目关闭此设置
+                    new WxgamePlugin(),
+                    new UglifyPlugin([{
+                        sources: ["main.js"],
+                        target: "main.min.js"
+                    }
+                    ]),
+                    new ManifestPlugin({ output: 'manifest.js' })
+>>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
                 ]
             }
         }

@@ -126,6 +126,7 @@ declare module skins.effect{
 	class ImportEftSkin extends eui.Skin{
 	}
 }
+<<<<<<< HEAD
 declare module skins.map{
 	class CutMapItemSkin extends eui.Skin{
 	}
@@ -138,6 +139,8 @@ declare module skins.map{
 	class CutMapViewSkin extends eui.Skin{
 	}
 }
+=======
+>>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
 declare module skins.scene{
 	class SceneImportSkin extends eui.Skin{
 	}

@@ -130,3 +130,7 @@ var tool;
         __reflect(UIAnim.prototype, "tool.comp.UIAnim", ["base.time.UpdateItem", "base.pool.PoolObject", "base.pool.DisposeObject"]);
     })(comp = tool.comp || (tool.comp = {}));
 })(tool || (tool = {}));
+<<<<<<< HEAD
+=======
+//# sourceMappingURL=UIAnim.js.map
+>>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884

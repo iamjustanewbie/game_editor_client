@@ -46,7 +46,14 @@ var tool;
             map.BEFORE_SAVE = "before_save";
             map.CHANGE_SPECIFIC_PT = "CHANGE_SPECIFIC_PT";
             map.DEL_SPECIFIC_PT = "DEL_SPECIFIC_PT";
+<<<<<<< HEAD
             map.CUT_MAP_LIST = Symbol();
         })(map = mod.map || (mod.map = {}));
     })(mod = tool.mod || (tool.mod = {}));
 })(tool || (tool = {}));
+=======
+        })(map = mod.map || (mod.map = {}));
+    })(mod = tool.mod || (tool.mod = {}));
+})(tool || (tool = {}));
+//# sourceMappingURL=MapDef.js.map
+>>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884

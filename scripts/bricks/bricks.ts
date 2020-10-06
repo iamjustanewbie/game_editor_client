@@ -15,7 +15,11 @@ export class BricksPlugin implements plugins.Command {
     constructor() {
     }
     async onFile(file: plugins.File) {
+<<<<<<< HEAD
         const filename = file.basename;
+=======
+        const filename = file.origin;
+>>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
         if (filename == 'manifest.json') {
             const contents = file.contents.toString();
             const jsonData: ManifestConfig = JSON.parse(contents);
@@ -26,11 +30,20 @@ export class BricksPlugin implements plugins.Command {
                 if (item != 'js/promise.js' && item != 'js/promise.min.js') {
                     content += `BK.Script.loadlib("GameRes://${item}");\n`
                 }
+<<<<<<< HEAD
+=======
+                if (item == "js/egret.js" || item == 'js/egret.min.js') {
+                    content += `BK.Script.loadlib("GameRes://egret.bricks.js");\n`
+                }
+>>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
             }
             for (let item of jsonData.game) {
                 content += `BK.Script.loadlib("GameRes://${item}");\n`
             }
+<<<<<<< HEAD
             content += `BK.Script.loadlib("GameRes://egret.bricks.js");\n`
+=======
+>>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
             file.path = file.dirname + '/manifest.js'
             file.contents = new Buffer(content);
         } else if (filename == 'main.js') {
@@ -40,6 +53,7 @@ export class BricksPlugin implements plugins.Command {
             result += ";global.Main = Main;";
             file.path = file.dirname + '/main.js'
             file.contents = new Buffer(result);
+<<<<<<< HEAD
         } else if (filename == 'promise.js') {
             return null;
         }
@@ -62,3 +76,12 @@ export class BricksPlugin implements plugins.Command {
 }
 
 declare var egret;
+=======
+        }
+        return file;
+    }
+    async onFinish(pluginContext) {
+
+    }
+}
+>>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884

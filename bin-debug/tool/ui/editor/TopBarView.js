@@ -28,3 +28,7 @@ var tool;
         })(editor = ui.editor || (ui.editor = {}));
     })(ui = tool.ui || (tool.ui = {}));
 })(tool || (tool = {}));
+<<<<<<< HEAD
+=======
+//# sourceMappingURL=TopBarView.js.map
+>>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
