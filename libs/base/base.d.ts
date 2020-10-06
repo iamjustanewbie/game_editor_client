@@ -34,11 +34,7 @@ declare module base {
         }
 
         class Notifier extends ObjBase {
-<<<<<<< HEAD
             public sendNt(notify: string | symbol, data?: any): void;
-=======
-            public sendNt(notify: string, data?: any): void;
->>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
         }
 
         class CmdBase extends Notifier {
@@ -69,11 +65,7 @@ declare module base {
 
         }
 
-<<<<<<< HEAD
         type MdrClsList = (new (p: egret.DisplayObjectContainer) => MdrBase)[];
-=======
-        type MdrClsList = (new(p: egret.DisplayObjectContainer) => MdrBase)[];
->>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
 
         interface MdrTab extends DisposeObject {
             hide(): void;
@@ -88,21 +80,13 @@ declare module base {
 
             public $setOwner(base: ModBase): void;
 
-<<<<<<< HEAD
             protected mark<T extends egret.DisplayObject>(key: string, type: new () => T): T;
-=======
-            protected mark<T extends egret.DisplayObject>(key: string, type: new() => T): T;
->>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
 
             protected newView(): void;
 
             protected getView(): egret.DisplayObject;
 
-<<<<<<< HEAD
             protected onNt(notify: string | symbol, method: Function, context: any): void;
-=======
-            protected onNt(notify: string, method: Function, context: any): void;
->>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
 
             protected offNt(notify: string): void;
 
@@ -128,11 +112,7 @@ declare module base {
 
             protected retProxy<T extends ProxyBase>(type: number): T;
 
-<<<<<<< HEAD
             protected genMdrTab<T extends MdrTab>(t: new (m: ModBase, p: egret.DisplayObjectContainer, l: MdrClsList) => T, list: MdrClsList): T;
-=======
-            protected genMdrTab<T extends MdrTab>(t: new(m: ModBase, p: egret.DisplayObjectContainer, l: MdrClsList) => T, list: MdrClsList): T;
->>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
 
         }
 

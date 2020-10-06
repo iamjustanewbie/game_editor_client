@@ -3,19 +3,11 @@
         "target": "es5",
         "outDir": "bin-debug",
         "experimentalDecorators": true,
-<<<<<<< HEAD
         "lib": [
             "es5",
             "dom",
             "es2015.promise",
             "es6"
-=======
-        "sourceMap": true,
-        "lib": [
-            "es5",
-            "dom",
-            "es2015.promise"
->>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
         ],
         "types": []
     },

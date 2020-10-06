@@ -7592,99 +7592,6 @@ var eui;
         var wingKeys = ["id", "locked", "includeIn", "excludeFrom"];
         var htmlEntities = [["<", "&lt;"], [">", "&gt;"], ["&", "&amp;"], ["\"", "&quot;"], ["'", "&apos;"]];
         var jsKeyWords = ["null", "NaN", "undefined", "true", "false"];
-<<<<<<< HEAD
-        var getRepeatedIds;
-        var getIds;
-        var checkDeclarations;
-        if (true) {
-            /**
-             * 获取重复的ID名
-             */
-            getRepeatedIds = function (xml) {
-                var result = [];
-                this.repeatedIdMap = {};
-                this.getIds(xml, result);
-                return result;
-            };
-            getIds = function (xml, result) {
-                if (xml.namespace != sys.NS_W && xml.attributes.id) {
-                    var id = xml.attributes.id;
-                    if (this.repeatedIdMap[id]) {
-                        result.push(toXMLString(xml));
-                    }
-                    else {
-                        this.repeatedIdMap[id] = true;
-                    }
-                }
-                var children = xml.children;
-                if (children) {
-                    var length_15 = children.length;
-                    for (var i = 0; i < length_15; i++) {
-                        var node = children[i];
-                        if (node.nodeType !== 1 || this.isInnerClass(node)) {
-                            continue;
-                        }
-                        this.getIds(node, result);
-                    }
-                }
-            };
-            function toXMLString(node) {
-                if (!node) {
-                    return "";
-                }
-                var str = "  at <" + node.name;
-                var attributes = node.attributes;
-                var keys = Object.keys(attributes);
-                var length = keys.length;
-                for (var i = 0; i < length; i++) {
-                    var key = keys[i];
-                    var value = attributes[key];
-                    if (key == "id" && value.substring(0, 2) == "__") {
-                        continue;
-                    }
-                    str += " " + key + "=\"" + value + "\"";
-                }
-                if (node.children.length == 0) {
-                    str += "/>";
-                }
-                else {
-                    str += ">";
-                }
-                return str;
-            }
-            /**
-             * 清理声明节点里的状态标志
-             */
-            checkDeclarations = function (declarations, list) {
-                if (!declarations) {
-                    return;
-                }
-                var children = declarations.children;
-                if (children) {
-                    var length_16 = children.length;
-                    for (var i = 0; i < length_16; i++) {
-                        var node = children[i];
-                        if (node.nodeType != 1) {
-                            continue;
-                        }
-                        if (node.attributes.includeIn) {
-                            list.push(toXMLString(node));
-                        }
-                        if (node.attributes.excludeFrom) {
-                            list.push(toXMLString(node));
-                        }
-                        checkDeclarations(node, list);
-                    }
-                }
-            };
-            function getPropertyStr(child) {
-                var parentStr = toXMLString(child.parent);
-                var childStr = toXMLString(child).substring(5);
-                return parentStr + "\n      \t" + childStr;
-            }
-        }
-=======
->>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
         /**
          * @private
          */
@@ -7720,15 +7627,6 @@ var eui;
                 if (hasClass && clazz) {
                     egret.registerClass(clazz, className);
                     var paths = className.split(".");
-<<<<<<< HEAD
-                    var length_17 = paths.length;
-                    var definition = __global;
-                    for (var i = 0; i < length_17 - 1; i++) {
-                        var path = paths[i];
-                        definition = definition[path] || (definition[path] = {});
-                    }
-                    if (definition[paths[length_17 - 1]]) {
-=======
                     var length_15 = paths.length;
                     var definition = __global;
                     for (var i = 0; i < length_15 - 1; i++) {
@@ -7736,7 +7634,6 @@ var eui;
                         definition = definition[path] || (definition[path] = {});
                     }
                     if (definition[paths[length_15 - 1]]) {
->>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
                         if (true && !parsedClasses[className]) {
                             egret.$warn(2101, className, codeText);
                         }
@@ -7745,11 +7642,7 @@ var eui;
                         if (true) {
                             parsedClasses[className] = true;
                         }
-<<<<<<< HEAD
-                        definition[paths[length_17 - 1]] = clazz;
-=======
                         definition[paths[length_15 - 1]] = clazz;
->>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
                     }
                 }
                 return clazz;
@@ -7807,15 +7700,6 @@ var eui;
                 if (hasClass && clazz) {
                     egret.registerClass(clazz, className);
                     var paths = className.split(".");
-<<<<<<< HEAD
-                    var length_18 = paths.length;
-                    var definition = __global;
-                    for (var i = 0; i < length_18 - 1; i++) {
-                        var path = paths[i];
-                        definition = definition[path] || (definition[path] = {});
-                    }
-                    if (definition[paths[length_18 - 1]]) {
-=======
                     var length_16 = paths.length;
                     var definition = __global;
                     for (var i = 0; i < length_16 - 1; i++) {
@@ -7823,7 +7707,6 @@ var eui;
                         definition = definition[path] || (definition[path] = {});
                     }
                     if (definition[paths[length_16 - 1]]) {
->>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
                         if (true && !parsedClasses[className]) {
                             egret.$warn(2101, className, toXMLString(xmlData));
                         }
@@ -7832,11 +7715,7 @@ var eui;
                         if (true) {
                             parsedClasses[className] = true;
                         }
-<<<<<<< HEAD
-                        definition[paths[length_18 - 1]] = clazz;
-=======
                         definition[paths[length_16 - 1]] = clazz;
->>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
                     }
                 }
                 return clazz;
@@ -7889,13 +7768,8 @@ var eui;
                 this.getStateNames();
                 var children = this.currentXML.children;
                 if (children) {
-<<<<<<< HEAD
-                    var length_19 = children.length;
-                    for (var i = 0; i < length_19; i++) {
-=======
                     var length_17 = children.length;
                     for (var i = 0; i < length_17; i++) {
->>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
                         var node = children[i];
                         if (node.nodeType === 1 && node.namespace == sys.NS_W &&
                             node.localName == DECLARATIONS) {
@@ -8100,13 +7974,8 @@ var eui;
                 this.initlizeChildNode(node, cb, varName);
                 var delayAssignments = this.delayAssignmentDic[id];
                 if (delayAssignments) {
-<<<<<<< HEAD
-                    var length_20 = delayAssignments.length;
-                    for (var i = 0; i < length_20; i++) {
-=======
                     var length_18 = delayAssignments.length;
                     for (var i = 0; i < length_18; i++) {
->>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
                         var codeBlock = delayAssignments[i];
                         cb.concat(codeBlock);
                     }
@@ -8141,13 +8010,8 @@ var eui;
                     case TYPE_ARRAY:
                         var values = [];
                         if (children) {
-<<<<<<< HEAD
-                            var length_21 = children.length;
-                            for (var i = 0; i < length_21; i++) {
-=======
                             var length_19 = children.length;
                             for (var i = 0; i < length_19; i++) {
->>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
                                 var child = children[i];
                                 if (child.nodeType == 1) {
                                     values.push(this.createFuncForNode(child));
@@ -8646,13 +8510,8 @@ var eui;
                 if (this.declarations) {
                     var children = this.declarations.children;
                     if (children && children.length > 0) {
-<<<<<<< HEAD
-                        var length_22 = children.length;
-                        for (var i = 0; i < length_22; i++) {
-=======
                         var length_20 = children.length;
                         for (var i = 0; i < length_20; i++) {
->>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
                             var decl = children[i];
                             if (decl.nodeType != 1) {
                                 continue;
@@ -8787,13 +8646,8 @@ var eui;
                 var children = root.children;
                 var item;
                 if (children) {
-<<<<<<< HEAD
-                    var length_23 = children.length;
-                    for (var i = 0; i < length_23; i++) {
-=======
                     var length_21 = children.length;
                     for (var i = 0; i < length_21; i++) {
->>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
                         item = children[i];
                         if (item.nodeType == 1 &&
                             item.localName == "states") {
@@ -8816,13 +8670,8 @@ var eui;
                 }
                 if (statesValue) {
                     var states = statesValue.split(",");
-<<<<<<< HEAD
-                    var length_24 = states.length;
-                    for (var i = 0; i < length_24; i++) {
-=======
                     var length_22 = states.length;
                     for (var i = 0; i < length_22; i++) {
->>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
                         var stateName = states[i].trim();
                         if (!stateName) {
                             continue;
@@ -9128,8 +8977,6 @@ var eui;
         }());
         sys.EXMLParser = EXMLParser;
         __reflect(EXMLParser.prototype, "eui.sys.EXMLParser");
-<<<<<<< HEAD
-=======
         if (true) {
             /**
              * 获取重复的ID名
@@ -9217,7 +9064,6 @@ var eui;
                 return parentStr + "\n      \t" + childStr;
             }
         }
->>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
     })(sys = eui.sys || (eui.sys = {}));
 })(eui || (eui = {}));
 //////////////////////////////////////////////////////////////////////////////////////
@@ -11390,13 +11236,8 @@ var eui;
         };
         Label.prototype.$setFontFamily = function (value) {
             if (!this.$changeFromStyle) {
-<<<<<<< HEAD
-                delete this.$revertStyle["fontFamily"];
-                this.$styleSetMap["fontFamily"] = false;
-=======
                 delete this.$revertStyle["fontFanily"];
                 this.$styleSetMap["fontFanily"] = false;
->>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
             }
             return _super.prototype.$setFontFamily.call(this, value);
         };

@@ -6,11 +6,6 @@ import { UglifyPlugin, IncrementCompilePlugin, CompilePlugin, ManifestPlugin, Ex
 import { WxgamePlugin } from './wxgame/wxgame';
 import { BricksPlugin } from './bricks/bricks';
 import { CustomPlugin } from './myplugin';
-<<<<<<< HEAD
-import { EuiCompilerPlugin } from './plugins/eui-compiler-plugin';
-import { WebpackDevServerPlugin, WebpackBundlePlugin } from './plugins/webpack-plugin';
-=======
->>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
 
 const config: ResourceManagerConfig = {
 
@@ -32,14 +27,6 @@ const config: ResourceManagerConfig = {
                     // }),
                     new ExmlPlugin('debug'), // 非 EUI 项目关闭此设置
                     new IncrementCompilePlugin(),
-<<<<<<< HEAD
-                    // new WebpackDevServerPlugin({ //新的 Webpack 编译器
-                    //     libraryType: "debug",
-                    //     defines: { DEBUG: true, RELEASE: false },
-                    //     typescript: { mode: 'modern' }
-                    // }),
-=======
->>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
                 ]
             }
         }
@@ -50,17 +37,7 @@ const config: ResourceManagerConfig = {
                 commands: [
                     new CustomPlugin(),
                     new CompilePlugin({ libraryType: "release", defines: { DEBUG: false, RELEASE: true } }),
-<<<<<<< HEAD
-                    // new WebpackBundlePlugin({ //新的 Webpack 编译器
-                    //     libraryType: "debug",
-                    //     defines: { DEBUG: false, RELEASE: true },
-                    //     typescript: { mode: 'legacy' }
-                    // }),
                     new ExmlPlugin('commonjs'), // 非 EUI 项目关闭此设置
-                    // new EuiCompilerPlugin(),//新的 eui 编译器
-=======
-                    new ExmlPlugin('commonjs'), // 非 EUI 项目关闭此设置
->>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
                     new UglifyPlugin([{
                         sources: ["main.js"],
                         target: "main.min.js"

@@ -282,25 +282,9 @@ declare module 'built-in' {
         /**
          * 是否输出转换过程
          */
-<<<<<<< HEAD
-        verbose?: boolean,
-        /**
-         * 其他传递的消息参数
-         */
-        info?:any
-        /**
-         * use wechat engine plugin
-         */
-        useWxPlugin?: boolean
-        /**
-         * use QQgame engine plugin
-         */
-        qqPlugin?: { use: boolean, pluginList: string[] }
-=======
         verbose?: boolean
 
 
->>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
     }
 
     /** 
@@ -379,19 +363,11 @@ declare module 'built-in' {
 
         /**
          * 是否输出日志
-<<<<<<< HEAD
-         * Whether to output the log
-=======
->>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
          */
         verbose?: boolean
 
         /**
          * 采用何种 hash 算法，目前暂时只支持 crc32
-<<<<<<< HEAD
-         * What hash algorithm is used, currently only crc32 is supported
-=======
->>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
          */
         hash?: "crc32"
 
@@ -399,21 +375,8 @@ declare module 'built-in' {
         /**
          * 设置匹配规则，将指定文件进行改名
          * 该参数是个数组，允许设置多个匹配规则
-<<<<<<< HEAD
-         * Set up matching rules to copy specified files to other folders
-         * This parameter is an array that allows multiple matching rules to be set
          */
         matchers: Matcher[]
-
-        /**
-         * 回调函数，返回值里包括文件的一些信息
-         * The callback function, return value includes some information about the file
-         */
-        callback?: Function
-=======
-         */
-        matchers: Matcher[]
->>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
     }
 
 
@@ -428,21 +391,12 @@ declare module 'built-in' {
 
         /**
          * 是否输出日志
-<<<<<<< HEAD
-         * Whether to output the log
-=======
->>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
          */
         verbose?: boolean
 
         /**
          * 设置匹配规则，将指定文件拷贝至其他文件夹
          * 该参数是个数组，允许设置多个匹配规则
-<<<<<<< HEAD
-         * Set up matching rules to copy specified files to other folders
-         * This parameter is an array that allows multiple matching rules to be set
-=======
->>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
          */
         matchers: Matcher[]
     }
@@ -472,8 +426,4 @@ declare module 'built-in' {
 
         constructor(option?: MergeEuiJsonPluginOptions);
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 03be62a2b3cc141c892a86154ef19146c7901884
